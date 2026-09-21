@@ -1,0 +1,29 @@
+On running pytest --cov=src --cov-report=term-missing 
+
+@DevKumarSonkar ➜ /workspaces/github-skills-challenge (main) $ pytest --cov=src --cov-report=term-missing
+================================================== test session starts ===================================================
+platform linux -- Python 3.13.15, pytest-9.1.1, pluggy-1.6.0
+rootdir: /workspaces/github-skills-challenge
+configfile: pytest.ini
+plugins: cov-7.1.0
+collected 8 items                                                                                                        
+
+tests/calculations_test.py ....                                                                                    [ 50%]
+tests/test_aiops_pipeline.py ....                                                                                  [100%]
+
+===================================================== tests coverage =====================================================
+____________________________________ coverage: platform linux, python 3.13.15-final-0 ____________________________________
+
+Name                      Stmts   Miss  Cover   Missing
+-------------------------------------------------------
+src/aiops_pipeline.py        37     29    22%   10-11, 15-38, 46-62
+src/anomaly_detector.py      18      3    83%   21, 24, 28
+src/calculations.py          16      6    62%   11, 18, 24-27
+src/event_consumer.py         6      0   100%
+src/event_producer.py         9      1    89%   12
+src/event_topic.py           10      1    90%   15
+-------------------------------------------------------
+TOTAL                        96     40    58%
+=================================================== 8 passed in 0.45s ====================================================
+
+
